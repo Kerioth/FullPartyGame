@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuUI : MonoBehaviour
 {
     public static MainMenuUI instance;
+
     private void Awake()
     {
         if (instance == null)
@@ -22,5 +24,8 @@ public class MainMenuUI : MonoBehaviour
 
     public void StartLevel(int level)
     {
-        //PlayerData
+        PlayerData.SetLevel(level);
+        SceneManager.LoadScene(level);
     }
+
+}
