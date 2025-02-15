@@ -563,6 +563,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6029991969101318831, guid: c77a20011fee4694cb75577a7509ffda, type: 3}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2142874827}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 823013430168213777, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 878228567396193568, guid: 745950c0543d4364abf59d299f446f37, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1525,6 +1553,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688159847250486910, guid: 745950c0543d4364abf59d299f446f37, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688159847250486910, guid: 745950c0543d4364abf59d299f446f37, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6688159847250486910, guid: 745950c0543d4364abf59d299f446f37, type: 3}
