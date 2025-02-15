@@ -2,21 +2,22 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+[DefaultExecutionOrder(-100)]
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private List<LevelPrefab> levelPrefabs;
     [SerializeField] private PlayerPrefab playerPrefab;
-    
+
     public static LevelManager Instance;
     public int currentLevel = 0;
-    
+
     public event Action OnLevelStarted;
     public event Action<bool> OnLevelFinished;
-    
+
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
             Instance = this;
         else
         {
@@ -26,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        StartLevel(0);
+        StartLevel(currentLevel);
     }
 
     public void NewStart() => StartLevel(1);

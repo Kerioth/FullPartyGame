@@ -5,11 +5,12 @@ using UnityEngine;
 public static class PlayerData
 {
     public static AllData data;
-    
-    public static int Level
+
+    public static int Level;
+    public static void SetLevel(int level)
     {
-        get => data.level;
-        set => data.level = value;
+        Level = level;
+        data.level = level;
     }
 
     public static float PlayerSpeed;
