@@ -10,28 +10,36 @@ namespace Code.SwitchAreas
         [SerializeField]
         private SwitchSeasonUI _uiForButtonImage;
         private bool _switchToWinter;
+        private bool _isActive;
 
         private void Awake()
         {
-            _uiForButtonImage.SwitchState(true);
+            _uiForButtonImage.SwitchState(_switchToWinter);
+            _uiForButtonImage.gameObject.SetActive(false);
+            SwitchSeason(true);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            _switchToWinter = true;
-            _uiForButtonImage.SwitchState(!_switchToWinter);
+            _isActive = true;
+            _uiForButtonImage.gameObject.SetActive(_isActive);
         }
 
         private void OnTriggerExit(Collider other)
         {
-            _switchToWinter = false;
-            _uiForButtonImage.SwitchState(!_switchToWinter);
+            _isActive = false;
+            _uiForButtonImage.gameObject.SetActive(_isActive);
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E))
-                SwitchSeason(_switchToWinter);
+            if (_isActive && Input.GetKeyDown(KeyCode.E))
+            {
+                _switchToWinter = !_switchToWinter;
+                _uiForButtonImage.SwitchState(_switchToWinter);
+                
+                SwitchSeason(!_switchToWinter);
+            }
         }
 
         private void SwitchSeason(bool switchToWinter)
