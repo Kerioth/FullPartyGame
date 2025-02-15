@@ -1,11 +1,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public static class PlayerData
 {
-   public static int level = 1;
+    public static AllData data;
+    
+    public static int Level
+    {
+        get => data.level;
+        set => data.level = value;
+    }
 
-   public static List<LevelData> playerLevels;
+    public static float PlayerSpeed;
+
+}
+
+[System.Serializable]
+public class AllData
+{
+    public int level;
+
+    public List<LevelData> playerLevels;
 }
 
 [System.Serializable]

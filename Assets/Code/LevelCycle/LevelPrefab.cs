@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class LevelPrefab : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Transform playerStartPoint;
+    [SerializeField] private Transform playerEndPoint;
+    public void SetUp()
     {
-        
+        var player = FindFirstObjectByType<PlayerPrefab>();
+        player.transform.position = playerStartPoint.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
