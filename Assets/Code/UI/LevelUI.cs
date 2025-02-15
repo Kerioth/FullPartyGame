@@ -17,10 +17,22 @@ public class LevelUI : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        LevelManager.Instance.OnLevelStarted += Reset;
+        LevelManager.Instance.OnLevelFinished += ShowEndScreen;
+    }
+
     public void Reset()
     {
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
+    }
+
+    public void ShowEndScreen(bool isWin)
+    {
+        if (isWin) ShowWinScreen();
+        else ShowLoseScreen();
     }
     
     public void ShowWinScreen()

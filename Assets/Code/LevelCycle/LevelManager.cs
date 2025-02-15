@@ -9,6 +9,10 @@ public class LevelManager : MonoBehaviour
     
     public static LevelManager Instance;
     public int currentLevel = 0;
+    
+    public event Action OnLevelStarted;
+    public event Action<bool> OnLevelFinished;
+    
 
     private void Awake()
     {
@@ -20,28 +24,37 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        StartLevel(0);
+    }
+
     public void NewStart() => StartLevel(1);
 
     public void NextLevel()
     {
+        levelPrefabs[currentLevel].gameObject.SetActive(false);
         currentLevel++;
+        if (currentLevel >= levelPrefabs.Count) currentLevel = 0;
         StartLevel(currentLevel);
     }
     public void StartLevel(int level)
     {
-        currentLevel = level;
-        LevelUI.instance.Reset();
+        PlayerData.Level = level;
+        levelPrefabs[currentLevel].gameObject.SetActive(true);
+        levelPrefabs[currentLevel].SetUp();
+        OnLevelStarted?.Invoke();
     }
 
     public void RestartLevel() => StartLevel(currentLevel);
 
     public void LoseLevel()
     {
-        LevelUI.instance.ShowLoseScreen();
+        OnLevelFinished?.Invoke(false);
     }
 
     public void EndLevel()
     {
-        LevelUI.instance.ShowWinScreen();
+        OnLevelFinished?.Invoke(true);
     }
 }
