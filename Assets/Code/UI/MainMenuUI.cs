@@ -15,6 +15,15 @@ public class MainMenuUI : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if(PlayerPrefs.HasKey("data"))
+        {
+            DataSaver.LoadData();
+        }
+        else
+        {
+            PlayerData.SetUp();
+        }
     }
 
     public void Show()
@@ -22,10 +31,10 @@ public class MainMenuUI : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    public void StartLevel(int level)
+    public void NewGame()
     {
-        PlayerData.SetLevel(level);
-        SceneManager.LoadScene(level);
+        PlayerData.SetLevel(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

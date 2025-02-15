@@ -59,6 +59,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -153,9 +156,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2398713230960711112, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4962044192986915196, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_Name
       value: ice
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732758297841867752, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -358,9 +369,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2398713230960711112, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3286104503439215052, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3447850362005951573, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_LocalScale.x
@@ -392,7 +407,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6505152144414599851, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732758297841867752, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -463,9 +482,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2398713230960711112, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3286104503439215052, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3447850362005951573, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_LocalScale.x
@@ -545,7 +568,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6505152144414599851, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732758297841867752, guid: 7cc14d531a3ef0348819c35ba6140bdd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -621,19 +648,23 @@ PrefabInstance:
       value: SwitcherArae
       objectReference: {fileID: 0}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
+      propertyPath: _switchToWinter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
       propertyPath: _switchObjects.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: _switchObjects.Array.data[0]
+      propertyPath: '_switchObjects.Array.data[0]'
       value: 
       objectReference: {fileID: 1245145542119689873}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: _switchObjects.Array.data[1]
+      propertyPath: '_switchObjects.Array.data[1]'
       value: 
       objectReference: {fileID: 3532653809093771697}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: _switchObjects.Array.data[2]
+      propertyPath: '_switchObjects.Array.data[2]'
       value: 
       objectReference: {fileID: 1038210805057967251}
     m_RemovedComponents: []
