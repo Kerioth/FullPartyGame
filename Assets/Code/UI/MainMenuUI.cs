@@ -24,3 +24,4 @@ public class MainMenuUI : MonoBehaviour
     {
         //PlayerData
     }
+}
