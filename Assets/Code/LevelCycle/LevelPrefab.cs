@@ -4,15 +4,10 @@ public class LevelPrefab : MonoBehaviour
 {
     [SerializeField] private Transform playerStartPoint;
     [SerializeField] private Transform playerEndPoint;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void SetUp()
     {
-        
+        var player = FindFirstObjectByType<PlayerPrefab>();
+        player.transform.position = playerStartPoint.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
