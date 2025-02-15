@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 639ac7944bb681a42b4c77d9e38087af
+timeCreated: 1502653923
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Prefab/Edge Detection Camera.prefab
+  uploadId: 210698
