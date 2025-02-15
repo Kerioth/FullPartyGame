@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 37920868d1c5c2742a931c709f018c16
+timeCreated: 1502652854
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Shader/EncodedDepth.shader
+  uploadId: 210698

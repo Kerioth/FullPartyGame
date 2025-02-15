@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f32e42b29303741428eba64e681d01f6
+timeCreated: 1506172431
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Example Scene/example2/LightingData.asset
+  uploadId: 210698

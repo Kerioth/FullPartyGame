@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: aca492e7356a7b242b2b607cc1ecdfad
+timeCreated: 1502734507
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Shader/Outline.shader
+  uploadId: 210698
