@@ -20,19 +20,28 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void NewStart() => StartLevel(1);
 
-    public void StartLevel()
+    public void NextLevel()
     {
-        
+        currentLevel++;
+        StartLevel(currentLevel);
+    }
+    public void StartLevel(int level)
+    {
+        currentLevel = level;
+        LevelUI.instance.Reset();
     }
 
-    public void RestartLevel()
+    public void RestartLevel() => StartLevel(currentLevel);
+
+    public void LoseLevel()
     {
-        
+        LevelUI.instance.ShowLoseScreen();
     }
 
     public void EndLevel()
     {
-        
+        LevelUI.instance.ShowWinScreen();
     }
 }
