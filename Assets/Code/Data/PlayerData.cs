@@ -13,7 +13,7 @@ public static class PlayerData
         data.level = level;
     }
 
-    public static float PlayerSpeed;
+    public static float PlayerSpeed = 5;
 
 }
 
