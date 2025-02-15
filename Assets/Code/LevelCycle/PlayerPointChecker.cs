@@ -1,3 +1,5 @@
+using System;
+using Code.SwitchAreas;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +12,11 @@ public class PlayerPointChecker : MonoBehaviour
         {
             EndGame();
         }
+
+        /*if (hit.collider.TryGetComponent(out SwitchArea area))
+        {
+            area.SwitchInteract();
+        }*/
     }
 
     void EndGame()
