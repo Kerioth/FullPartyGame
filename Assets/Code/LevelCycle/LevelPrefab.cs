@@ -3,12 +3,14 @@ using UnityEngine;
 public class LevelPrefab : MonoBehaviour
 {
     [SerializeField] private Transform playerStartPoint;
-    [SerializeField] private Transform playerEndPoint;
+    [SerializeField] private GameObject playerEndPoint;
+
     public void SetUp()
     {
         // var player = FindFirstObjectByType<PlayerPrefab>();
         var player = LevelManager.Instance.playerPrefab;
         player.transform.position = playerStartPoint.position;
+        playerEndPoint.SetActive(true);
     }
 
 }

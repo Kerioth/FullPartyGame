@@ -95,7 +95,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6423488669172943323
 Transform:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6685696773279391079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -136,9 +136,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -242,15 +239,15 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: '_switchObjects.Array.data[0]'
+      propertyPath: _switchObjects.Array.data[0]
       value: 
       objectReference: {fileID: 8584327929724543465}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: '_switchObjects.Array.data[1]'
+      propertyPath: _switchObjects.Array.data[1]
       value: 
       objectReference: {fileID: 8390419738600682477}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: '_switchObjects.Array.data[2]'
+      propertyPath: _switchObjects.Array.data[2]
       value: 
       objectReference: {fileID: 8782455169314789670}
     m_RemovedComponents: []
@@ -342,15 +339,15 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: '_switchObjects.Array.data[0]'
+      propertyPath: _switchObjects.Array.data[0]
       value: 
       objectReference: {fileID: 8584327929724543465}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: '_switchObjects.Array.data[1]'
+      propertyPath: _switchObjects.Array.data[1]
       value: 
       objectReference: {fileID: 8390419738600682477}
     - target: {fileID: 9157631777061955246, guid: 84d3096602311494283e98ff951fef43, type: 3}
-      propertyPath: '_switchObjects.Array.data[2]'
+      propertyPath: _switchObjects.Array.data[2]
       value: 
       objectReference: {fileID: 282339886694978489}
     m_RemovedComponents: []
@@ -473,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158797850586428393, guid: db1c74171fa70496e9e4a48504d69efe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1421557113100824080, guid: db1c74171fa70496e9e4a48504d69efe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -546,6 +543,10 @@ PrefabInstance:
     - target: {fileID: 5139720133327304565, guid: db1c74171fa70496e9e4a48504d69efe, type: 3}
       propertyPath: m_Name
       value: LevelEnv_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721926118571530122, guid: db1c74171fa70496e9e4a48504d69efe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
