@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6422458402550034260}
   - component: {fileID: 8360135383575393054}
   - component: {fileID: 3810430421941193344}
+  - component: {fileID: 5830185946337150051}
+  - component: {fileID: 1133279351110150664}
   m_Layer: 8
   m_Name: SnowMan
   m_TagString: Player
@@ -241,6 +243,30 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &5830185946337150051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359542613942598353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37123c237c2346cd9d7b29055d2400d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1133279351110150664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359542613942598353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1905e6e4fa37046a881ecbbcb9b1216a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1296436273306219738
 GameObject:
   m_ObjectHideFlags: 0
