@@ -23,13 +23,13 @@ namespace Audio
             DontDestroyOnLoad(gameObject);
 
             foreach (Sound music in musics)
-                AddSouce(music);
+                AddSource(music);
             foreach (Sound sound in sounds)
-                AddSouce(sound);
+                AddSource(sound);
         }
 
         //Adding AudioSource with Sound prefs to AudioSystem
-        void AddSouce(Sound s)
+        void AddSource(Sound s)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -59,7 +59,7 @@ namespace Audio
         {
             if (!name.source)
             {
-                AddSouce(name);
+                AddSource(name);
             }
             if (name.source.isPlaying && name.fullPlay) return;
             if (name.source.isActiveAndEnabled)
