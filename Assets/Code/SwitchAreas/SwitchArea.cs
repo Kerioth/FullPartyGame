@@ -19,7 +19,7 @@ namespace Code.SwitchAreas
         {
             _uiForButtonImage.gameObject.SetActive(false);
             _uiForButtonImage.SwitchState(_switchToWinter);
-            SwitchSeason(_switchToWinter);
+            SwitchSeason(!_switchToWinter);
         }
 
         private void OnTriggerEnter(Collider other)
