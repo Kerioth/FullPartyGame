@@ -22,6 +22,6 @@ public class MainMenuUI : MonoBehaviour
 
     public void StartLevel(int level)
     {
-        //PlayerData
+        LevelManager.Instance.StartLevel(level);
     }
 }
