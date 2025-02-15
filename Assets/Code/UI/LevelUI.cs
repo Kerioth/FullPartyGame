@@ -22,6 +22,12 @@ public class LevelUI : MonoBehaviour
         LevelManager.Instance.OnLevelStarted += Reset;
         LevelManager.Instance.OnLevelFinished += ShowEndScreen;
     }
+    
+    private void OnDisable()
+    {
+        LevelManager.Instance.OnLevelStarted -= Reset;
+        LevelManager.Instance.OnLevelFinished -= ShowEndScreen;
+    }
 
     public void Reset()
     {
