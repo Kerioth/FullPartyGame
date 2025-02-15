@@ -56,6 +56,7 @@ public class LevelUI : MonoBehaviour
 
     public void OpenMenu()
     {
-        
+        MainMenuUI.instance.Show();
+        gameObject.SetActive(false);
     }
 }
