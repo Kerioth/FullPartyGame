@@ -20,7 +20,7 @@ namespace Code.SwitchAreas
         private void OnTriggerEnter(Collider other)
         {
             _witchAreaIsAvailable = true;
-            _uiForButtonImage.SwitchState(false);
+            _uiForButtonImage.SwitchState(true);
         }
 
         private void OnTriggerExit(Collider other)
