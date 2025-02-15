@@ -17,13 +17,13 @@ public class PlayerPointChecker : MonoBehaviour
 
     private void OnEnable()
     {
-        //LevelManager.Instance.OnLevelStarted += ResetController;
+        LevelManager.Instance.OnLevelStarted += ResetController;
         // LevelManager.Instance.OnLevelFinished += EndGame();
     }
 
     private void OnDisable()
     {
-        //LevelManager.Instance.OnLevelStarted -= ResetController;
+        LevelManager.Instance.OnLevelStarted -= ResetController;
         // LevelManager.Instance.OnLevelFinished -= EndGame();
     }
 
@@ -36,7 +36,7 @@ public class PlayerPointChecker : MonoBehaviour
 
     void ResetController()
     {
-        // print("Reset player: " + PlayerData.PlayerSpeed);
+        print("Reset player: " + PlayerData.PlayerSpeed);
         GetComponent<ThirdPersonController>().enabled = true;
         GetComponent<ThirdPersonController>().MoveSpeed = PlayerData.PlayerSpeed;
 
