@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 58c34f76cb52f394bb1b533bb0138ded
+timeCreated: 1502735990
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Shader/StandardSurfaceOutlined.shader
+  uploadId: 210698

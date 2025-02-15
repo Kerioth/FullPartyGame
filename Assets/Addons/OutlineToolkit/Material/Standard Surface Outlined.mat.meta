@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8b9836a06d484234d910fef86e073b12
+timeCreated: 1502736111
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Material/Standard Surface Outlined.mat
+  uploadId: 210698

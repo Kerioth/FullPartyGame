@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 511abb2eb6715b24cbed418dfbb4d492
+timeCreated: 1502652854
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Shader/EdgeCombine.shader
+  uploadId: 210698

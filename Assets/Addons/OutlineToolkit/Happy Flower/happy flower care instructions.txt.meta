@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ce936d6b8886584696ec3d8f000f2b0
+timeCreated: 1502755066
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Happy Flower/happy flower care instructions.txt
+  uploadId: 210698
