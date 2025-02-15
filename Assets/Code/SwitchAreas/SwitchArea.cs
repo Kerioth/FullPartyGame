@@ -31,7 +31,7 @@ namespace Code.SwitchAreas
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.E))
-                SwitchSeason(_switchToWinter);
+                SwitchSeason(!_switchToWinter);
         }
 
         private void SwitchSeason(bool switchToWinter)
