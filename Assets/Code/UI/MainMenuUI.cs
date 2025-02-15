@@ -15,6 +15,15 @@ public class MainMenuUI : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if(PlayerPrefs.HasKey("data"))
+        {
+            DataSaver.LoadData();
+        }
+        else
+        {
+            PlayerData.SetUp();
+        }
     }
 
     public void Show()
