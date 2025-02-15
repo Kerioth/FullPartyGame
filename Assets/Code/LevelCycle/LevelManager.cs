@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private List<LevelPrefab> levelPrefabs;
-    [SerializeField] private PlayerPrefab playerPrefab;
+    public PlayerPrefab playerPrefab;
 
     public static LevelManager Instance;
     public int currentLevel = 0;
