@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 4568118098920682029}
   m_Layer: 0
   m_Name: LevelEnv
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStartPoint: {fileID: 1421557113100824080}
-  playerEndPoint: {fileID: 0}
+  playerEndPoint: {fileID: 1554085191498932951}
 --- !u!1 &5898772824752178430
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +496,8 @@ GameObject:
   - component: {fileID: 1554085191498932951}
   - component: {fileID: 6155966450905113267}
   - component: {fileID: 1091964724033618056}
-  - component: {fileID: 3285080865551741663}
+  - component: {fileID: 6797438708231563159}
+  - component: {fileID: 4483847534855165612}
   m_Layer: 0
   m_Name: FinishPoint
   m_TagString: Untagged
@@ -513,8 +514,8 @@ Transform:
   m_GameObject: {fileID: 6295450438670981528}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.12, y: 0, z: -0.84}
-  m_LocalScale: {x: 2, y: 0.5, z: 2}
+  m_LocalPosition: {x: 11.77, y: -0.43, z: -7.2}
+  m_LocalScale: {x: 3, y: 0.5, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5009994234334166936}
@@ -572,8 +573,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3285080865551741663
-CapsuleCollider:
+--- !u!65 &6797438708231563159
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -590,11 +591,21 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &4483847534855165612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6295450438670981528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff8ce8bc247f490f98deeb8e3fa0d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8001020265796770939
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +743,7 @@ Transform:
   m_GameObject: {fileID: 8218648144316646698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.82, y: 0, z: 4.8}
+  m_LocalPosition: {x: 1.38, y: 0, z: 6.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -808,7 +819,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
