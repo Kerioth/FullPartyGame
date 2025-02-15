@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
 
     public static LevelManager Instance;
     public int currentLevel = 0;
+    public int levelStars = 0;
 
     public event Action OnLevelStarted;
     public event Action<bool> OnLevelFinished;
@@ -41,7 +42,10 @@ public class LevelManager : MonoBehaviour
     }
     public void StartLevel(int level)
     {
-        PlayerData.Level = level;
+        PlayerData.SetLevel(level);
+        AudioBox.Instance.Play("Level");
+        levelStars = 0;
+        
         levelPrefabs[currentLevel].gameObject.SetActive(true);
         levelPrefabs[currentLevel].SetUp();
         OnLevelStarted?.Invoke();
@@ -57,5 +61,6 @@ public class LevelManager : MonoBehaviour
     public void EndLevel()
     {
         OnLevelFinished?.Invoke(true);
+        PlayerData.SetLevelStars();
     }
 }

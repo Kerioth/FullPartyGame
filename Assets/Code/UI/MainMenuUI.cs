@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,11 @@ public class MainMenuUI : MonoBehaviour
         {
             PlayerData.SetUp();
         }
+    }
+
+    private void Start()
+    {
+        AudioBox.Instance.Play("Menu");
     }
 
     public void Show()

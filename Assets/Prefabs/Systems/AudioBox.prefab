@@ -51,19 +51,35 @@ MonoBehaviour:
     SoundVolume: 0
   musics:
   - name: Menu
-    clip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
-    volume: 0.5
-    pitch: 0
+    clip: {fileID: 8300000, guid: 8ba2d5be920fe484c9e8edb8c3061c0a, type: 3}
+    volume: 0.4
+    pitch: 1
     loop: 1
     fullPlay: 0
     unstop: 0
     source: {fileID: 0}
   - name: Level
-    clip: {fileID: 8300000, guid: 1532c7e67c2d60c4c8780da14b7e8fcf, type: 3}
-    volume: 0.5
-    pitch: 0
+    clip: {fileID: 8300000, guid: cb2f79b9970ab451e88fb8c5dd9f4643, type: 3}
+    volume: 0.4
+    pitch: 1
     loop: 1
     fullPlay: 0
     unstop: 0
     source: {fileID: 0}
-  sounds: []
+  sounds:
+  - name: Tap
+    clip: {fileID: 8300000, guid: 84ed0523b71c248b0b933735c6089d83, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 8300000, guid: 58da7d16417374f9ab355194b21388b8, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}

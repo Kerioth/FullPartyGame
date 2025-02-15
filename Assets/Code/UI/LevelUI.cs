@@ -1,9 +1,13 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelUI : MonoBehaviour
 {
     [SerializeField] private GameObject winScreen, loseScreen;
+    
+    [SerializeField] private List<GameObject> levelStars;
 
     public static LevelUI instance;
     private void Awake()
@@ -44,6 +48,14 @@ public class LevelUI : MonoBehaviour
     public void ShowWinScreen()
     {
         winScreen.SetActive(true);
+        AudioBox.Instance.Play("Win");
+
+        int stars = LevelManager.Instance.levelStars;
+        
+        for (int i = 0; i < levelStars.Count; i++)
+        {
+            levelStars[i].SetActive(i <= stars - 1);
+        }
     }
 
     public void ShowLoseScreen()
@@ -51,12 +63,20 @@ public class LevelUI : MonoBehaviour
         loseScreen.SetActive(true);
     }
 
-    public void NextLevel() => LevelManager.Instance.NextLevel();
-    public void RestartLevel() => LevelManager.Instance.RestartLevel();
+    public void NextLevel()
+    {
+        AudioBox.Instance.Play("Tap");
+        LevelManager.Instance.NextLevel();
+    }
+    public void RestartLevel()
+    { 
+        AudioBox.Instance.Play("Tap");
+        LevelManager.Instance.RestartLevel();
+    }
 
     public void OpenMenu()
     {
-        MainMenuUI.instance.Show();
-        gameObject.SetActive(false);
+        AudioBox.Instance.Play("Tap");
+        SceneManager.LoadScene(0);
     }
 }
