@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class PlayerData
 {
-   public static int level = 1;
+   public static int level;
 
    public static List<LevelData> playerLevels;
 }
