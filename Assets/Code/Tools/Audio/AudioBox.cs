@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
+using Audio;
+using AudioSettings = Audio.AudioSettings;
 
-namespace Audio
-{
-    public class AudioBox : MonoBehaviour
+public class AudioBox : MonoBehaviour
     {
         public AudioSettings settings;
         [Space]
@@ -168,6 +168,3 @@ namespace Audio
         }
 
     }
-
-}
-

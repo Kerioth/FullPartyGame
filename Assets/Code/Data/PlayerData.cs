@@ -7,10 +7,18 @@ public static class PlayerData
     public static AllData data;
 
     public static int Level;
+    public static int LevelStars;
     public static void SetLevel(int level)
     {
         Level = level;
         data.level = level;
+
+        LevelStars = 0;
+    }
+
+    public static void SetLevelStars()
+    {
+        data.playerLevels[Level].stars = LevelStars;
     }
     
     public static float PlayerSpeed = 5;
