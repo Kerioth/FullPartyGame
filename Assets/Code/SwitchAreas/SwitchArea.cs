@@ -3,20 +3,23 @@ using UnityEngine;
 
 namespace Code.SwitchAreas
 {
-    public class SwitchArea : MonoBehaviour
+    public class SwitcherArea : MonoBehaviour
     {
+        [SerializeField]
+        private SwitcherArea _switcherArea;
         [SerializeField]
         private SwitchObject[] _switchObjects;
         [SerializeField]
         private SwitchSeasonUI _uiForButtonImage;
+        [SerializeField]
         private bool _switchToWinter;
         private bool _isActive;
 
         private void Awake()
         {
-            _uiForButtonImage.SwitchState(_switchToWinter);
             _uiForButtonImage.gameObject.SetActive(false);
-            SwitchSeason(true);
+            _uiForButtonImage.SwitchState(_switchToWinter);
+            SwitchSeason(_switchToWinter);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -44,6 +47,7 @@ namespace Code.SwitchAreas
 
         private void SwitchSeason(bool switchToWinter)
         {
+            // _switcherArea.SwitchSeason(switchToWinter);
             foreach (SwitchObject switchObject in _switchObjects) 
                 switchObject.SwitchState(switchToWinter);
         }
