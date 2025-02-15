@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 021ac94eb5a0db347a83532c2342e9aa
+guid: fe0217f18d871da4ca8356e487907791
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palitra_Meterial
+    second: {fileID: 2100000, guid: e4067c0787790a844ae265cbaae58f3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palitra_Meterial.001
+    second: {fileID: 2100000, guid: 427157577b9e500469e6e160435060a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palitra_Meterial.002
+    second: {fileID: 2100000, guid: 496db794e1103854eb7ffd333ce84f12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palitra_Meterial.003
+    second: {fileID: 2100000, guid: 89b48a8258d9ed2498b7a81e86b212f2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +36,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
