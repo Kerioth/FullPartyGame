@@ -1,16 +1,14 @@
+using Audio;
 using UnityEngine;
 
 public class SettingsUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void toggleSound(bool on)
     {
-        
+        AudioBox.Instance.SoundSwitch(on);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void toggleMusic(bool on) {
+        AudioBox.Instance.MusicSwitch(on);
     }
 }
