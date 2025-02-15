@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 1b341369a9255384fb99b060c27bcabf
+guid: f4ee01c113427bb4bb1b28f1b0018730
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palitra_Meterial
+    second: {fileID: 2100000, guid: 374137cfbf23bbb43b1119f1ff6fb240, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
