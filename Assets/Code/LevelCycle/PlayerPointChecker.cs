@@ -20,6 +20,12 @@ public class PlayerPointChecker : MonoBehaviour
         //LevelManager.Instance.OnLevelStarted += ResetController;
         // LevelManager.Instance.OnLevelFinished += EndGame();
     }
+    
+    private void OnDisable()
+    {
+        LevelManager.Instance.OnLevelStarted -= ResetController;
+        // LevelManager.Instance.OnLevelFinished -= EndGame();
+    }
 
     void EndGame()
     {
