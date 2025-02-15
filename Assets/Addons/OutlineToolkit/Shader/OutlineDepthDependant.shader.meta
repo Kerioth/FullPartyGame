@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: de5d5c080039100468b1022e04759d4f
+timeCreated: 1509031599
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Shader/OutlineDepthDependant.shader
+  uploadId: 210698

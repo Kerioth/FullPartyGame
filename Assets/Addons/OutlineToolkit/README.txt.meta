@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9d19599c049037c489def6234ba0609e
+timeCreated: 1502653508
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/README.txt
+  uploadId: 210698

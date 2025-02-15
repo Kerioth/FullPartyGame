@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: bde0914cb05fecf4583f648ba0735aca
+timeCreated: 1502736975
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Script/MeshProcessor.cs
+  uploadId: 210698

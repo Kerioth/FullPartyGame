@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3a9063a172326244fa092af7fc4b7f81
+timeCreated: 1502654783
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Example Scene/example1.unity
+  uploadId: 210698

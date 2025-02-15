@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d4ffee9bcfa1ea743a6428c9ac30e12f
+timeCreated: 1502652801
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98020
+  packageName: Outline Toolkit
+  packageVersion: 1.0.5
+  assetPath: Assets/OutlineToolkit/Shader/Normals.shader
+  uploadId: 210698
