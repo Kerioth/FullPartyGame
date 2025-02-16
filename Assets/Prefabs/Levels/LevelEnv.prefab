@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStartPoint: {fileID: 1421557113100824080}
-  playerEndPoint: {fileID: 1554085191498932951}
+  playerEndPoint: {fileID: 6295450438670981528}
 --- !u!1 &5898772824752178430
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1554085191498932951
 Transform:
   m_ObjectHideFlags: 0
