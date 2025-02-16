@@ -36,7 +36,7 @@ public class PlayerPointChecker : MonoBehaviour
 
     void ResetController()
     {
-        print("Reset player: " + PlayerData.PlayerSpeed);
+        // print("Reset player: " + PlayerData.PlayerSpeed);
         GetComponent<ThirdPersonController>().enabled = true;
         GetComponent<ThirdPersonController>().MoveSpeed = PlayerData.PlayerSpeed;
 
