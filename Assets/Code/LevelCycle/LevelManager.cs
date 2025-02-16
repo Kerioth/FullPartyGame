@@ -60,6 +60,8 @@ public class LevelManager : MonoBehaviour
 
     public void EndLevel()
     {
+        levelStars = 3;
+        PlayerData.LevelStars = levelStars;
         OnLevelFinished?.Invoke(true);
         PlayerData.SetLevelStars();
     }

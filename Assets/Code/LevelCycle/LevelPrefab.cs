@@ -7,8 +7,11 @@ public class LevelPrefab : MonoBehaviour
     public void SetUp()
     {
         // var player = FindFirstObjectByType<PlayerPrefab>();
-        var player = LevelManager.Instance.playerPrefab;
+        // var player = LevelManager.Instance.playerPrefab;
+        var player = FindFirstObjectByType<PlayerPrefab>();
         player.transform.position = playerStartPoint.position;
+        
+        playerEndPoint.gameObject.SetActive(true);
     }
 
 }
