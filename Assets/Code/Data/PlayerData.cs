@@ -11,6 +11,8 @@ public static class PlayerData
     public static void SetLevel(int level)
     {
         Level = level;
+        if(data == null) SetUp();
+        
         data.level = level;
 
         LevelStars = 0;

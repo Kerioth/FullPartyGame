@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelUI : MonoBehaviour
 {
-    [SerializeField] private GameObject winScreen, loseScreen;
+    [SerializeField] private GameObject winScreen;
     
     [SerializeField] private List<GameObject> levelStars;
 
@@ -36,13 +36,13 @@ public class LevelUI : MonoBehaviour
     public void Reset()
     {
         winScreen.SetActive(false);
-        loseScreen.SetActive(false);
+        // loseScreen.SetActive(false);
     }
 
     public void ShowEndScreen(bool isWin)
     {
         if (isWin) ShowWinScreen();
-        else ShowLoseScreen();
+        // else ShowLoseScreen();
     }
     
     public void ShowWinScreen()
@@ -58,10 +58,10 @@ public class LevelUI : MonoBehaviour
         }
     }
 
-    public void ShowLoseScreen()
-    {
-        loseScreen.SetActive(true);
-    }
+    // public void ShowLoseScreen()
+    // {
+    //     loseScreen.SetActive(true);
+    // }
 
     public void NextLevel()
     {

@@ -47,8 +47,8 @@ public class LevelManager : MonoBehaviour
         AudioBox.Instance.Play("Level");
         levelStars = 0;
         
+        levelPrefabs[currentLevel].SetUp(playerPrefab.transform);
         levelPrefabs[currentLevel].gameObject.SetActive(true);
-        levelPrefabs[currentLevel].SetUp();
         OnLevelStarted?.Invoke();
     }
 
