@@ -30,12 +30,15 @@ public class MainMenuUI : MonoBehaviour
     private void Start()
     {
         AudioBox.Instance.Play("Menu");
+        AudioBox.Instance.Stop("Level");
     }
 
     public void Show()
     {
         gameObject.SetActive(true);
     }
+    
+    public void Tap() => AudioBox.Instance.Play("Tap");
 
     public void NewGame()
     {

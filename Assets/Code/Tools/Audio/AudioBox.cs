@@ -12,6 +12,8 @@ public class AudioBox : MonoBehaviour
         public Sound[] sounds;
 
         public static AudioBox Instance;
+        
+        private Sound currentMusic;
 
         private void Awake()
         {
@@ -124,8 +126,7 @@ public class AudioBox : MonoBehaviour
 
             foreach (Sound sound in sounds)
             {
-                if (isPlay) sound.source.enabled = true;
-                else sound.source.enabled = false;
+                sound.source.enabled = isPlay;
             }
         }
 
@@ -161,9 +162,11 @@ public class AudioBox : MonoBehaviour
         {
             Sound lookingSound = Array.Find(musics, sound => sound.name == name);
 
-            if(lookingSound == null)
+            if (lookingSound == null)
+            {
                 lookingSound = Array.Find(sounds, sound => sound.name == name);
-
+            }
+            
             return lookingSound;
         }
 

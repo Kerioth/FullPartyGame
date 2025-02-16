@@ -43,6 +43,7 @@ public class LevelManager : MonoBehaviour
     public void StartLevel(int level)
     {
         PlayerData.SetLevel(level);
+        AudioBox.Instance.Stop("Menu");
         AudioBox.Instance.Play("Level");
         levelStars = 0;
         
